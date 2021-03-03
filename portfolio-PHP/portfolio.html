@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHPを使用した掲示板サイト</title>
+</head>
+
+
+<body>
+<h1>名前とメッセージを入力してください</h1>
+<p>どちらも入力しないとエラーが出ます。</p>
+<form  method='post' enctype="multipart/form-data">
+    名前<input type='text' name='nm' value='{{名前}}' />
+    メッセージ<textarea name="msg">{{メッセージ}}</textarea><br />
+    <input type="file" name="upfile" size="50" /><br/>
+    <input type="submit" value="めっせーじ送信"><br>
+	
+</form>
+{{エラー}}
+{{ページリンク}}
+{{ログ}}
+{{ページリンク}}
+
+
+
+
+</body>
+</html>
