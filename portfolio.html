@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
     <title>PHPを使用した掲示板サイト</title>
 </head>
 
 
 <body>
 <h1>名前とメッセージを入力してください</h1>
-<p>どちらも入力しないとエラーが出ます。</p>
-<form  method='post' enctype="multipart/form-data">
-    名前<input type='text' name='nm' value='{{名前}}' />
-    メッセージ<textarea name="msg">{{メッセージ}}</textarea><br />
-    <input type="file" name="upfile" size="50" /><br/>
-    <input type="submit" value="めっせーじ送信"><br>
+<form  class="form" method='post' enctype="multipart/form-data">
+    <div class="item">
+        <label class="label-left" for="name">名前</label><br>
+        <input type='text' name='nm' value='{{名前}}'>
+    </div>
+    <div class="item">
+        <label class="label-left" for="message">メッセージ</label><br>
+        <textarea name="msg">{{メッセージ}}</textarea><br>
+    </div>
+    <div class="item">
+        <input type="file" name="upfile" size="50" /><br>
+    </div>
+    <div class="btns">
+        <input type="submit" value="送信"><br>
+        <input type="reset" value="リセット">
+    </div>
 	
 </form>
 {{エラー}}

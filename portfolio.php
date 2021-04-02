@@ -62,8 +62,6 @@
             }
             else
             {
-            
-                
 
                 //fileの初期化して
                 $OnceFile=$_FILES['upfile'];
